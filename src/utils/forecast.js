@@ -16,8 +16,8 @@ const forecast = (longitude, latitude, callback) => {
     } else {
       callback(
         undefined,
-        "Humidity:" +
-          body.current.weather_descriptions[6] +
+        "Local Time:" +
+          body.localtime +
           body.current.weather_descriptions[0] +
           ". It is currently " +
           body.current.temperature +
